@@ -12,6 +12,7 @@
     <properties>
         <browser>chrome</browser>
         <baseurl>https://www.google.com.ua/</baseurl>
+        <query_for_search>fdfd</query_for_search>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <src.dir>${basedir}${file.separator}src${file.separator}main${file.separator}java</src.dir>
         <path.to.driver>${basedir}${file.separator}lib${file.separator}driver</path.to.driver>
@@ -19,6 +20,7 @@
         <test.resource.dir>src${file.separator}test${file.separator}resources</test.resource.dir>
         <testng.dir>${test.resource.dir}${file.separator}suites</testng.dir>
         <report.dir>${basedir}${file.separator}reports${file.separator}${browser}</report.dir>
+
     </properties>
 
     <dependencies>
@@ -217,6 +219,7 @@
                             <upload.dir>${basedir}${file.separator}upload</upload.dir>
                             <report.dir>${report.dir}</report.dir>
                             <baseurl>${baseurl}</baseurl>
+                            <query_for_search>${query_for_search}</query_for_search>
                             <path.to.driver>${path.to.driver}${file.separator}chromedriver.exe</path.to.driver>
                         </systemProperties>
                     </configuration>

@@ -15,7 +15,7 @@ public class AmazonTest extends BaseTest {
     {
         Actions.AmzActions().loadAmazon(driver);
         Actions.AmzActions().inputQuery(Constants.BASE_QUERY);
-
+        System.out.println(System.getProperty("query_for_search"));
         ArrayList<Book> books = Actions.AmzActions().getAmazonBooks();
         Assert.assertTrue(Actions.AmzActions().checkBookPresence(driver,books));
 
