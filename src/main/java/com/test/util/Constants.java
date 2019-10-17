@@ -19,4 +19,5 @@ public class Constants {
     public static String AMZ_URL ="https://www.amazon.com/";
     public static  String CHECK_BOOK ="https://www.amazon.com/Head-First-Java-Kathy-Sierra/dp/0596009208/ref=sr_1_3";
     public static String BASE_QUERY = System.getProperty("query_for_search");
+
 }
